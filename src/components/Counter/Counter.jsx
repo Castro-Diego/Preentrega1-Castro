@@ -8,7 +8,11 @@ const Counter = () => {
   };
 
   const restar = () => {
-    SetCounter(Counter - 1);
+    if (Counter > 0) {
+      SetCounter(Counter - 1);
+    } else {
+      alert("el contador no puede ser menor que cero");
+    }
   };
 
   return (
